@@ -1,0 +1,79 @@
+<html>
+<head>
+<style>
+h1
+{
+font-style:bold;
+text-align:center;
+    color:greenyellow;
+}
+textarea[name=tadd],select[name=tsub],select[name=tquali],input[type=text],input[type=password],input[type=email],input[type=tel],input[type=file],input[type=date]{
+width: 500px;
+height: auto;
+padding: 10px;
+margin-bottom: 25px;
+margin-top: 5px;
+border: 2px solid #ccc;
+color: #4f4f4f;
+font-size: 16px;
+border-radius: 5px;
+}
+fieldset
+    {
+	width:50%;
+	height:100%;
+        margin-left:300px;
+        margin-right:0px;
+        text-align: center;
+        border-width:25 px;
+	border-style:solid;
+	border-color:yellowgreen;
+    }
+div.left
+{
+float:center;
+margin-left:200px;
+border-style:none;
+}
+</style>
+</head>
+<body>
+<br><br>
+<form name="myform" method="POST" action="add.php">
+<fieldset>
+    <h1>TRMS</h1>
+<label>Enter Teacher Id</label><br>
+<input type="text" id="tid" name="tid" required/><br>
+<label>Enter Teacher Name</label><br>
+<input type="text" id="tname" name="tname" required/><br>
+<label>Enter Teacher Qualification</label><br>
+<select name="tquali" id="tquali" required>
+<option value="Msc(Electronics)">Msc(Electronics)</option>
+<option value="Msc(Mathematics)">Msc(Mathematics)</option>
+<option value="Msc(Physics)">Msc(Physics)</option>
+<option value="Bachelor of Education (B.Ed)">Bachelor of Education (B.Ed)</option>
+<option value="Master of Education (M.Ed)">Master of Education (M.Ed)</option>
+<option value="Ph.D">Ph.D</option>
+</select><br>
+<label>Teacher Subjects</label><br>
+<select name="tsub" id="tsub" required>
+<option value="tcs">TCS(Theoritical Computer Science)</option>
+<option value="java">JAVA</option>
+<option value="php">PHP</option>
+<option value="sys pro">System Programming</option>
+<option value="os">Operating System</option>
+<option value="adbms">Advance Database Management System</option>
+<option value="electronics">Electronics</option>
+<option value="C++">C++</option>
+<option value="CN">Computer Networks</option>
+</select><br>
+Teacher Address<br><textarea name="tadd" style=width=100%,height=100%
+ required></textarea><br>	
+Joining Date<br><input type=date placeholder=dd/mm/yyyy name="tjdate" style=width=100%,height=100% required><br><br>
+<input type="Submit" name="Submit" value="ADD"> <input type=reset value="RESET"><br><br>
+</fieldset>
+</form><br><br>
+<h1><center><a href="indexvalidate.php">Go Back Homepage</a></center></h1>
+<body>
+</html>
+

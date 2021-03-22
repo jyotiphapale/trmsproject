@@ -1,0 +1,149 @@
+/* Below line is used for online Google font */
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+body{
+    
+    
+}
+sidenav{
+    background-color: lightskyblue;
+}
+
+
+h1{
+    text-align: center;
+    font-family:fantasy;
+    font-display: block;
+    font-size: 45px;
+    color:greenyellow;
+}
+h2{
+background-color: #FEFFED;
+padding: 30px 35px;
+margin: -10px -50px;
+text-align:center;
+border-radius: 10px 10px 0 0;
+}
+hr{
+margin: 10px -50px;
+border: 0;
+border-top: 1px solid #ccc;
+margin-bottom: 40px;
+}
+div.container{
+width:50%;
+height:50%;
+font-family: 'Raleway', sans-serif;
+display:table;
+    background-size: cover;
+    margin-right:500px;
+
+}
+#main{
+    float: none;
+width: 70%;
+height:auto;
+font-family: 'raleway',sans-serif;
+	border-style:solid;
+	border-color:lightskyblue;
+	border-width:0px;
+	margin-left:100%;
+	margin-right:0px;
+	background-color:aliceblue;
+	text-decoration-color: blueviolet;
+	    opacity: 1;
+	    display:inline-block;
+	    
+	    
+    
+}
+div.image{
+    width: 150%;
+    height: 150%;
+}
+
+input[type=text],input[type=password],input[type=email],input[type=tel],input[type=number],input[type=submit]{
+width: 75%;
+height: auto;
+padding: 10px;
+border: 2px solid #ccc;
+color: #4f4f4f;
+font-size: 16px;
+border-radius: 5px;
+float:center;
+margin-right:30px;
+margin-left:30px;
+}
+label{
+color: #464646;
+text-shadow: 0 1px 0 #fff;
+font-size: 14px;
+font-weight: bold;
+margin-right:80px;
+margin-left:0px;
+}
+center{
+font-size:32px;
+}
+.note{
+color:red;
+}
+.valid{
+color:green;
+}   
+.back{
+text-decoration: none;
+
+background-color: rgb(0, 214, 255);
+padding: 3px 20px;
+
+color: black;
+}
+input[type=button],input[type=submit]{
+font-size: 16px;
+background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
+border: 1px solid #e5a900;
+color: #4E4D4B;
+font-weight: bold;
+cursor: pointer;
+width:75%;
+padding: 10px 0;
+outline:none;
+margin-right:30px;
+margin-left:30px;
+margin-bottom:20px;
+
+}
+
+fieldset
+		border-style:none;
+		border-width:0px;
+            }
+select{
+width: 100%;
+height: 40px;
+padding: 10px;
+margin-bottom: 25px;
+margin-top: 5px;
+
+color: #4f4f4f;
+font-size: 16px;
+
+}
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+}

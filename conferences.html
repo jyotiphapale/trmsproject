@@ -1,0 +1,76 @@
+<?php
+session_start();
+echo $_SESSION['tname'];
+?>
+<html>
+<head>
+<style>
+label
+{
+float:center;
+}
+h1
+{
+font-style:bold;
+text-align:center;
+    color:greenyellow;
+}
+input[type=time],select[name=tsub],select[name=doc],input[type=text],input[type=password],input[type=topic],input[type=tel],input[type=file],input[type=date],input[type=submit]{
+width: 500px;
+height: auto;
+padding: 10px;
+margin-bottom: 25px;
+margin-top: 5px;
+border: 2px solid #ccc;
+color: #4f4f4f;
+font-size: 16px;
+border-radius: 5px;
+}
+fieldset
+    {
+	width:50%;
+	height:auto;
+        margin-left:300px;
+        margin-right:0px;
+        text-align: center;
+        border-width:25 px;
+	border-style:solid;
+	border-color:yellowgreen;
+    }
+div.left
+{
+float:center;
+margin-left:200px;
+border-style:none;
+}
+</style>
+</head>
+
+<body>
+
+<br><br>
+<form action="conference.php" method="POST" enctype="multipart/form-data">
+<fieldset>
+    <h1>TRMS</h1>
+<label>Select Conference type</label><br>
+<select name="doc" id="doc" required>
+<option value="att">Attended</option>
+<option value="org">Organised</option>
+</select><br>
+<label>Topic</label><br>
+<input type="topic" id="topic" name="topic" required/><br>
+<label>Venue</label><br>
+<input type="text" id="venue" name="venue" required/><br>
+<label>Date</label><br>
+<input type="date" id="date" name="date" required/><br>
+<label>Time</label><br>
+<input type="time" id="time" name="time" required/><br>
+<input type="submit" name="submit" value="save">
+<br>
+<a href="indexvalidate.php">Go Back on Homepage</a>
+
+</fieldset>
+</form>
+<body>
+</html>
+
